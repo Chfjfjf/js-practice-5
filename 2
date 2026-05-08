@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>sumInput</title>
+</head>
+<body>
+<script>
+function sumInput() {
+    let numbers = [];
+    while (true) {
+        let value = prompt("Введіть число", "");
+        if (value === null || value === "" || isNaN(value)) break;
+        numbers.push(+value);
+    }
+    let sum = 0;
+    for (let num of numbers) {
+        sum += num;
+    }
+    return sum;
+}
+alert(sumInput());
+</script>
+</body>
+</html>
