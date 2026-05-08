@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Array Task</title>
+</head>
+<body>
+<script>
+let styles = ["Jazz", "Blues"];
+console.log(styles);
+styles.push("Rock-n-Roll");
+console.log(styles);
+let middle = Math.floor((styles.length - 1) / 2);
+styles[middle] = "Classics";
+console.log(styles);
+let removed = styles.shift();
+console.log(removed);
+console.log(styles);
+styles.unshift("Rap", "Reggae");
+console.log(styles);
+</script>
+</body>
+</html>
